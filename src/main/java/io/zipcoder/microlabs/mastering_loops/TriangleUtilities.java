@@ -7,14 +7,21 @@ public class TriangleUtilities {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < numberOfRows; i++){
             for (int j = 0; j < numberOfRows; j++){
-                sb.append("*\n");
+                sb.append("*");
             }
-        } sb.append("*\n");
+            sb.append("\n");
+        }
         return sb.toString();
     }
 
     public static String getRow(int numberOfStars) {
-    return null;}
+        StringBuilder sb = new StringBuilder();
+        String stars = "*";
+        for (int i = 0; i < numberOfStars; i++) {
+            sb.append("*");
+        }
+    return sb.toString();
+    }
 
     public static String getSmallTriangle() {
         return null;
